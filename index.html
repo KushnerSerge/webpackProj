@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+
+<body onload="checkCookies()">
+   
+<!--Finding element by Id-->
+
+<p id="intro">Finding HTML Elements by Id</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="demo"></p>
+<!--  -->
+<!-- Finding HTML Elements by Tag Name  -->
+<p>Finding HTML Elements by Tag Name.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo1"></p>
+
+
+<!-- Finding HTML Elements by Class Name -->
+<p>Finding HTML Elements by Class Name.</p>
+<p class="intro0">Hello World! element by class name</p>
+<p class="intro0">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+<p id="demo2"></p>
+
+<!-- Finding HTML Elements by CSS Selectors  -->
+<p>Finding HTML Elements by Query Selector</p>
+<p class="intro1">Hello World! Element by query selector.</p>
+<p class="intro1">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo3"></p>
+
+
+<!--  Finding HTML Elements by HTML Object Collections  -->
+
+<p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>These are the values of each element in the form:</p>
+
+<p id="demo4"></p>
+
+
+<!-- Changing HTML Content  -->
+<h2>JavaScript can Change HTML</h2>
+<p id="p1">Hello World!</p>
+
+
+<!-- some image path experimenting  -->
+<img id="myImage1" src="C:\Users\kusni\source\repos\webpackProj\src\landscape.gif">
+
+
+<!-- Dynamic content-->
+<p id="demo5"></p>
+
+<!-- Document Write -->
+<p>Bla, bla, bla</p>
+
+<script>
+document.write(Date());
+</script>
+
+<p>Bla, bla, bla</p>
+
+<!--  JavaScript Form Validation -->
+<h1>No name than yes alert  </h1>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form>
+
+
+<!-- Changing HTML Style -->
+<p>Changing the HTML style:</p>
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+
+<!-- Using Events  -->
+<h1 id="id1">My Heading 1</h1>
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'red'">
+Click Me!</button>
+
+ <!--Events-->   
+ <h2>JavaScript HTML Events</h2>
+ <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+  
+ <!--Methods--> 
+ <h1 onclick="changeText(this)">Click on this text 1!</h1>
+
+    <!--The onchange Event -->
+    <h1> The onchange event - input data in order to uppercase</h1>
+    <input type="text" id="fname" onchange="myFunction()">
+
+<!--  Events   --> 
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+           Mouse Over Me
+    </div>
+    
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#D94A38;width:90px;height:20px; padding:40px;">
+            Click Me
+    </div>
+
+    <!--Event Attribute-->
+   <h2>JavaScript HTML Events</h2>
+   <p>Click the button to display the date.</p>
+   <button onclick="displayDate()">The time is?</button>
+   <p id="demo6"></p>
+
+<!-- Assign Events Using the HTML DOM -->
+<h2>JavaScript HTML Events</h2>
+<p>Click "Try it" to execute the displayDate() function.</p>
+<button id="myBtn123">Try it</button>
+<p id="demo7"></p>
+
+<!-- The onload and onunload Events  -->
+<p id="demo8"></p>
+
+<!--Event Listener -->
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn2">Try it</button>
+
+<!--  Event Listener 2-->
+<h2>JavaScript addEventListener() 2 </h2>
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<button id="myBtn3">Try it</button>
+
+<!-- Add Many Event Handlers to the Same Element --> 
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to add two click events to the same button.</p>
+
+<button id="myBtn4">Try it</button>
+
+    <script await src="C:\Users\kusni\source\repos\webpackProj\src\app.js"></script> 
+</body>
+
+</html>
